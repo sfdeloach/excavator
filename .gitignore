@@ -1,0 +1,5 @@
+# no *.class files
+bin/
+
+# exclude exported runnable jar
+excavator.jar
