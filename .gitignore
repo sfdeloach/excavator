@@ -1,5 +1,14 @@
-# no *.class files
+# exclude *.class files
 bin/
+
+# exclude 3rd party libraries
+lib/
+
+# exclude csv tables
+csv/
+
+# exclude sensitive connection variables
+conn/
 
 # exclude exported runnable jar
 excavator.jar
