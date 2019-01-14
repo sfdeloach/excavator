@@ -46,9 +46,10 @@ public class Application {
 				app.printMenu();
 				break;
 			case "setc":
-				// TODO: updates json files in conn directory
+				// TODO: incomplete
 				break;
 			case "test":
+				app.testDbConnection();
 				break;
 			case "pull":
 				app.pullData();
@@ -103,7 +104,7 @@ public class Application {
 		Date stopDate = Application.getDate("stop");
 
 		if (startDate.after(stopDate)) {
-			System.out.println("dates out of order, swapping dates...");
+			System.out.println("dates out of order, swapping start/stop dates...");
 			Date temp = startDate;
 			startDate = stopDate;
 			stopDate = temp;
@@ -113,6 +114,10 @@ public class Application {
 
 		// TODO: continue with pullData method --->
 
+	}
+	
+	private void testDbConnection() {
+		// TODO: incomplete
 	}
 
 	private void setup() throws IOException {
